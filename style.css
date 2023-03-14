@@ -7,7 +7,7 @@
 body {
     color: #089bd5;
     font-family: "Poppins";
-    min-height: 105vh;
+    min-height: 100vh;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
 }
 
 header {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #54fbe8;
 }
 
