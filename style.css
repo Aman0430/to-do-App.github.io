@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #089bd5;
+    font-family: "Poppins";
+    min-height: 105vh;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+header {
+    font-size: 2rem;
+    color: #54fbe8;
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: aliceblue; */
+}
+
+form button, form input {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+}
+
+form button {
+    color: #C9D674;
+    background: white;
+    cursor: pointer;
+    transition: all 0.4 ease;
+    margin-left: 0.5rem;
+}
+
+form button:hover {
+    color: white;
+    background: #C5DC34;
+}
+
+.fa-plus-circle {
+    margin-top: 0.3rem;
+    margin-left: -0.5rem;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 25%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    border-radius: 1rem;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn, .complete-btn {
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.filter-todo {
+    outline: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+}
+
+select {
+    color: #adc035;
+    width: 10rem;
+    height: 2.75rem;
+    cursor: pointer;
+    padding: 0.75rem;
+    border: none;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #C5DC34;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.select:hover::after {
+    background: white;
+    color: #C5DC34;
+}
+
+.complete-btn {
+    background: #C5DC34;
+}
+
+.trash-btn {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: rgb(171, 171, 171);
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check-circle {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.slide {
+    transform: translateX(9rem);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.todo-button {
+    transition: all 0.2s ease-in;
+}
+
+body {
+    margin: auto;
+    background-image: linear-gradient( 358.4deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+
+.wave {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12rem;
+    animation: wave 20s -1s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25rem;
+    animation: wave 15s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5rem;
+    animation: wave 8s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
